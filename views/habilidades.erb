@@ -1,0 +1,37 @@
+<title>Hero Sheet: Árboles de Habilidades</title>
+<h1><center>Árboles de Habilidades</center></h1>
+<link rel="stylesheet" href="../../app.css" type="text/css" />
+<a href=/>Índice</a><br><br>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<% personajes.each do |pj| %>
+				<td><%= pj.capitalize %></td>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<% personajes.each do |pj| %>
+				<td><img src=../images/personajes/<%= pj %>.png alt="personaje" /, id='icon2'>
+					<% unless pj=="enano" %>
+						<img src=../images/personajes/<%= genderize(pj,"female") %>.png alt="personaje" /, id='icon2'>
+					<% end %>
+				</td>
+			<% end %>
+		</tr>
+		<% 3.times do |i| %>
+			<tr>
+				<% personajes.each do |pj| %>
+					<td>
+						<% h = send(pj)[i] %>
+						<a href="/habilidades/<%= h %>">
+						<%= h.gsub('lord','señor').capitalize %><br>
+						<img src="../images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
+					</td>
+				<% end %>
+			</tr>	
+		<% end %>
+	</tbody>
+</table><

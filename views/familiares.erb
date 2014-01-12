@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../app.css" type="text/css" />
+
+<h1><center>Lista de Familiares</center></h1>
+<a href=/>Índice</a><br><br>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% pets.each do |p| %>
+			<tr>
+				<td><%= p[:id] %></td>
+				<td>
+					<% img_path = "'../images/pets/#{p[:name]}.png'" %>
+					<img src=<%=img_path%> alt=<%=p[:name]%>, id='icon' />
+				</td>
+				<td><%= p[:name].capitalize %></td>
+				<td><%= p[:bono] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
