@@ -9,7 +9,7 @@ def falangistas
     {
       :id           => 2,
       :name         => "tortuga",
-      :description  => "por cada aliado que este a su lado cuerpo a cuerpo, tiene +1 potencia en la defensa",
+      :description  => "Por cada aliado situado cuerpo a cuerpo, excepto delante y detrás, tiene +1 potencia en la defensa",
       :type         => "Pasiva"
     },
     {
