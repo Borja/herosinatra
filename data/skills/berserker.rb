@@ -76,19 +76,19 @@ def berserkers
     {
       :id           => 12,
       :name         => "enemigo predilecto",
-      :description  => "al tener un enemigo predilecto el heroe gana +1PM al matarlos y los monstruos no le empujan",
+      :description  => "Al tener un enemigo predilecto el heroe gana +1PM al matarlos y los monstruos no le empujan",
       :type         => "Pasiva"
     },
     {
       :id           => 13,
       :name         => "camino furioso",
-      :description  => "al matar gana +1 ataque",
+      :description  => "Al matar gana +1 ataque",
       :type         => "Pasiva"
     },
     {
       :id           => 14,
       :name         => "camino sangriento",
-      :description  => "al matar gana +1PM",
+      :description  => "Al matar gana +1PM",
       :type         => "Pasiva"
     },
     
