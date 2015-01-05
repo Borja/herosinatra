@@ -893,7 +893,7 @@ def heros
     }),
     Hero.new({ 
       :id           => 46,
-      :name         => "Legolas",
+      :name         => "Gracia",
       :personaje    => "derviche",
       :jugador      => "Daniel Cabañas",
       :status       => "reserva",
@@ -904,6 +904,7 @@ def heros
       :armas        => [Arma.new({:id => 1})],
       :armadura     => Armadura.new({:id => 2}),
       :hechizos     => [18,19,20],
+      :pet          => Pet.new({:id  => 15, :name => "Fabulosa", :torpe => true}),
     })
   ]
 end
